@@ -31,8 +31,8 @@
     								{($sBasket.Amount + $sShippingcosts)|currency}
 							{else}
 								{$sBasket.Amount|currency}
-						</b>
 						{/if}
+						</b>
 					</td>
   				</tr>
 			</table>
