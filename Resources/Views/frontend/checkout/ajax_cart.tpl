@@ -37,9 +37,9 @@
 				<tr>
 					<td><b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b></td>
     					<td><b>
-							{if}
+							
     								{($sBasket.Amount + $sShippingcosts)|currency}
-						{/if}
+					
 						</b>
 					</td>
   				</tr>
