@@ -10,7 +10,7 @@
   				</tr>
 				<tr>
     					<td>{s name="paulSumWithTax"}Summe: {/s}</td>
-    					<td><small>{$sBasket.AmountNumeric|currency}</small></td>
+    					<td><small>{$sBasket.Amount|currency}{s name=Star}{/s}</small></td>
   				</tr>
 				{if $sUserLoggedIn == true}
 					<tr>
@@ -20,7 +20,7 @@
 					{else}
 					<tr>
 						<td>{s name="paulSumestimatedshippingcosts"}Versandkosten, Abweichung je nach Lieferadresse möglich:{/s}</td>
-						<td>{$sShippingcosts|currency}</td>
+						<td>{$sShippingcosts|currency}{s name=Star}{/s}</td>
 					</tr>
 				{/if}
 				<tr>
