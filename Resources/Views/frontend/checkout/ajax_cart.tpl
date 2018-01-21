@@ -28,10 +28,10 @@
 					<td><b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b></td>
     					<td>
 						{if $sUserLoggedIn == true}
-    							<b>{($sBasket.Amount + $sShippingcosts)|currency}</b>
-						{else}
-							<b>{$sBasket.Amount|currency}</b>
-						{/if}
+                                        		 {($sBasket.Amount + $sBasket.AmountNumeric)|currency }
+                               			 {elseif $sUserLoggedIn == false}
+                                      			  {$sBasket.Amount|currency}
+                                          	  {/if}
 					</td>
   				</tr>
 			</table>
